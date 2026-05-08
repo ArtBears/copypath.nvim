@@ -13,12 +13,12 @@ Defaults use **`<leader>` plus two keys** so chords stay short and work well wit
 
 Add a spec under `lua/plugins/` in your config (LazyVim picks up every file in that folder).
 
-**From Git** (replace `YOUR_USER` / repo name with yours):
+**From Git:**
 
 ```lua
 return {
   {
-    "YOUR_USER/copypath.nvim",
+    "ArtBears/copypath.nvim",
     event = "VeryLazy",
     config = function()
       require("copypath").setup()
