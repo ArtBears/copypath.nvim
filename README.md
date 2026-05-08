@@ -27,12 +27,12 @@ return {
 }
 ```
 
-**Local checkout** (good while developing):
+**Local checkout** (adjust `dir` to wherever you cloned this repo):
 
 ```lua
 return {
   {
-    dir = vim.fn.expand("~/Projects/oss/copypath"),
+    dir = vim.fn.expand("~/path/to/copypath.nvim"),
     event = "VeryLazy",
     config = function()
       require("copypath").setup()
